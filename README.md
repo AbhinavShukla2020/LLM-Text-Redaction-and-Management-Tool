@@ -34,7 +34,7 @@ This project provides a web-based interface, which adds to diff2html, managing a
 1. The main interface displays diff views of original and redacted text files.
 2. Use the checkboxes next to deleted text to toggle redaction.
 3. Select options from the dropdown for each file to apply specific actions.
-4. Use the "Save" button to save individual file changes.
+4. Use the "Save" button to download individual file changes.
 5. Click "Display Full Text" to view the complete redacted text in a modal.
 6. Use "Save All" to process and save all files at once to the web server in a uploads folder.
 
