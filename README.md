@@ -7,7 +7,7 @@ This project provides a web-based interface, which adds to diff2html, managing a
 - `new/`: Folder containing redacted text files
 - `original/`: Folder containing original, unredacted text files
 - `README.md`: This file, providing an overview of the project
-- `additional_script.html`: Additional JavaScript and HTML for enhanced UI functionality
+- `additional_script.html`: Additional JavaScript and HTML for enhanced UI functionality, which adds on to diff2html
 - `example_result_01.html`: An example of the resulting HTML output
 - `server.py`: Python server script to handle backend operations
 
