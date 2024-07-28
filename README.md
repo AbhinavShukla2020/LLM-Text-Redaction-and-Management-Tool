@@ -1,6 +1,6 @@
 # Text Redaction and Management Tool
 
-This project provides a web-based interface for managing and redacting text files, with features for comparing original and modified versions, selective redaction, and file management.
+This project provides a web-based interface, which adds to diff2html, managing and redacting text files, with features for comparing original and modified versions, selective redaction, and file management.
 
 ## Files and Structure
 
@@ -24,9 +24,10 @@ This project provides a web-based interface for managing and redacting text file
 ## Setup and Running
 
 1. Ensure you have Python installed on your system.
-2. Install the required Python packages (details to be added).
-3. Run the server: python server.py
-4. Open the main HTML file in a web browser.
+2. Run the server: python server.py
+3. Use diff2html to generate the initial side-by-side changes in an HTML file
+4. Add the additional_script.html to the bottom of the HTML file
+5. Open the HTML file in a web browser.
 
 ## Usage
 
@@ -35,16 +36,8 @@ This project provides a web-based interface for managing and redacting text file
 3. Select options from the dropdown for each file to apply specific actions.
 4. Use the "Save" button to save individual file changes.
 5. Click "Display Full Text" to view the complete redacted text in a modal.
-6. Use "Save All" to process and save all files at once.
+6. Use "Save All" to process and save all files at once to the web server.
 
-## Additional Scripts
-
-The `additional_script.html` file contains extra JavaScript and CSS that enhance the functionality of the base interface. It adds:
-
-- Modal for displaying full text
-- Copy to clipboard and download buttons
-- "Save All" functionality
-- Improved styling for buttons and dropdowns
 
 ## Server Functionality
 
