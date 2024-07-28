@@ -13,13 +13,13 @@ This project provides a web-based interface, which adds to diff2html, managing a
 
 ## Features
 
-- Side-by-side diff view of original and redacted text
+- Side-by-side diff view of original and redacted text(from diff2html)
 - Selective redaction with checkboxes
 - File selection dropdown for each diff view
-- Individual and bulk save options
+- Individual and bulk download options
 - Full text display modal
 - Copy to clipboard and download functionality
-- Server-side file saving and management
+- Server-side file saving
 
 ## Setup and Running
 
