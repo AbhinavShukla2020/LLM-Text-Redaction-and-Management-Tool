@@ -7,7 +7,7 @@ This project provides a web-based interface, which adds to diff2html, managing a
 - `new/`: Folder containing redacted text files
 - `original/`: Folder containing original, unredacted text files
 - `README.md`: This file, providing an overview of the project
-- `additional_script.html`: Additional JavaScript and HTML for enhanced UI functionality, which adds on to diff2html
+- `additional_script.js`: Additional JavaScript and HTML for enhanced UI functionality, which adds on to diff2html
 - `example_result_01.html`: An example of the resulting HTML output
 - `server.py`: Python server script to handle backend operations
 
@@ -26,7 +26,7 @@ This project provides a web-based interface, which adds to diff2html, managing a
 1. Ensure you have Python installed on your system.
 2. Run the server: `python server.py`
 3. Use diff2html to generate the initial side-by-side changes in an HTML file
-4. Add the `additional_script.html` to the bottom of the HTML file(example shown in `example_result_01.html`
+4. Add the `additional_script.js` as a script in the header or the footer of the HTML file(example shown in `example_result_01.html`
 5. Open the HTML file in a web browser.
 
 ## Usage
