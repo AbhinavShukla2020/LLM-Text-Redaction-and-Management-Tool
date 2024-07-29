@@ -23,7 +23,7 @@ This project provides a web-based interface, which adds to diff2html, managing a
 
 ## Setup and Running
 
-1. Ensure you have Python installed on your system.
+1. Ensure you have Python installed on your system and the required dependencies in `requirements.txt`.
 2. Run the server: `python server.py`
 3. Use diff2html to generate the initial side-by-side changes in an HTML file
 4. Add the `additional_script.js` as a script in the header or the footer of the HTML file(example shown in `example_result_01.html`
