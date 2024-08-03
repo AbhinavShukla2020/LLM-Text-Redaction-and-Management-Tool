@@ -3,7 +3,7 @@
 -->
 
     <!-- CSS Styles for the modal and buttons -->
-    <style>
+     <style>
         /* Modal overlay */
         .modal {
             display: none; 
@@ -169,7 +169,8 @@
             // Modify the submit button click handler
             submitButton.click(function() {
                 var fileWrapper = $(this).closest('.d2h-file-wrapper');
-                var fullText = '';
+                var fileName = fileWrapper.find('.d2h-file-name').text().trim();
+                var fileContent = '';
                 fileWrapper.find('.d2h-ins').find('span.d2h-code-line-ctn').each(function() {
                     var lineElement = $(this).clone();
                     lineElement.find('input.insert-checkbox').remove();
@@ -183,22 +184,27 @@
                         $(this).replaceWith($(this).text());
                     });
 
-                    fullText += lineElement.text().trim() + '\n';
+                    fileContent += lineElement.text().trim() + '\n';
                 });
 
-                // Send text to server
+                // Prepare the data in the same format as "Save All"
+                var fileData = [{
+                    name: fileName,
+                    content: fileContent
+                }];
+
+                // Send file to server
                 $.ajax({
-                    url: 'http://localhost:5000/save',
+                    url: 'http://localhost:5000/save_all',
                     type: 'POST',
                     contentType: 'application/json',
-                    data: JSON.stringify({ text: fullText }),
+                    data: JSON.stringify(fileData),
                     success: function(response) {
-                        alert('Text saved successfully. Filename: ' + response.filename);
-                        // Trigger download
-                        window.location.href = 'http://localhost:5000/download/' + response.filename;
+                        alert('File saved successfully. File: ' + response.files.join(', '));
+                        // You can add code here to download the file if needed
                     },
                     error: function(xhr, status, error) {
-                        alert('Failed to save text: ' + error);
+                        alert('Failed to save file: ' + error);
                     }
                 });
             });
@@ -363,7 +369,7 @@
         }
     });
     </script>
-
+        
 <!--
-    END OF ADDITIONAL SCRIPTS
+	END OF ADDITIONAL SCRIPTS
 -->
