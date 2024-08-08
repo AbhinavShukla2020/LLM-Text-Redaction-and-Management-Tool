@@ -2,6 +2,7 @@
 
 This project provides a web-based interface, which adds to diff2html, managing and redacting text files, with features for comparing original and modified versions, selective redaction, and file management.
 
+
 ## Files and Structure
 
 - `new/`: Folder containing redacted text files
@@ -28,6 +29,8 @@ This project provides a web-based interface, which adds to diff2html, managing a
 3. Use diff2html to generate the initial side-by-side changes in an HTML file
 4. Add the `additional_script.js` as a script in the header or the footer of the HTML file(example shown in `example_result_01.html`
 5. Open the HTML file in a web browser.
+
+[Video demonstration of setup and running process](https://drive.google.com/file/d/1dQJaYsHggKmM0g51afdH6U33hunB7YlP/view?usp=sharing)
 
 ## Usage
 
