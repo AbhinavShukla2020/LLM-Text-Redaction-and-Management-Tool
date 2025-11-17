@@ -1,4 +1,4 @@
-# Text Redaction and Management Tool
+# LLM Text Redaction and Management Tool
 
 This project provides a web-based interface, which adds to diff2html, managing and redacting text files, with features for comparing original and modified versions, selective redaction, and file management.
 
